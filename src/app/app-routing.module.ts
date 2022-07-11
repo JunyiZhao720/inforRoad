@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeOneComponent } from './components/pages/home-one/home-one.component';
+import { HomeComponent } from './components/pages/home/home.component';
 import { HomeTwoComponent } from './components/pages/home-two/home-two.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
@@ -20,24 +20,24 @@ import { ServiceDetailsComponent } from './components/pages/service-details/serv
 import { AboutComponent } from './components/pages/about/about.component';
 
 const routes: Routes = [
-  {path: '', component: HomeOneComponent},
-    {path: 'home-two', component: HomeTwoComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'service', component: ServiceComponent},
-    {path: 'service-details', component: ServiceDetailsComponent},
-    {path: 'portfolio', component: PortfolioComponent},
-    {path: 'portfolio-two', component: PortfolioTwoComponent},
-    {path: 'pricing', component: PricingComponent},
-    {path: 'error', component: ErrorComponent},
-    {path: 'faq', component: FaqComponent},
-    {path: 'team', component: TeamComponent},
-    {path: 'team-two', component: TeamTwoComponent},
-    {path: 'privacy', component: PrivacyComponent},
-    {path: 'blog', component: BlogComponent},
-    {path: 'blog-two', component: BlogTwoComponent},
-    {path: 'blog-three', component: BlogThreeComponent},
-    {path: 'blog-details', component: BlogDetailsComponent},
-    {path: 'contact', component: ContactComponent},
+  {path: '', component: HomeComponent},
+  // {path: 'home-two', component: HomeTwoComponent},
+  {path: 'about', component: AboutComponent},
+  // {path: 'service', component: ServiceComponent},
+  // {path: 'service-details', component: ServiceDetailsComponent},
+  // {path: 'portfolio', component: PortfolioComponent},
+  // {path: 'portfolio-two', component: PortfolioTwoComponent},
+  // {path: 'pricing', component: PricingComponent},
+  // {path: 'error', component: ErrorComponent},
+  // {path: 'faq', component: FaqComponent},
+  // {path: 'team', component: TeamComponent},
+  // {path: 'team-two', component: TeamTwoComponent},
+  // {path: 'privacy', component: PrivacyComponent},
+  {path: 'blog', component: BlogComponent},
+  {path: 'blog-two', component: BlogTwoComponent},
+  {path: 'blog-three', component: BlogThreeComponent},
+  // {path: 'blog-details', component: BlogDetailsComponent},
+  {path: 'contact', component: ContactComponent},
     // Here add new pages component
 
     {path: '**', component: ErrorComponent} // This line will remain down from the whole pages component list
